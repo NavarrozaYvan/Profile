@@ -1,17 +1,18 @@
 import React from 'react';
-import '../App.css'; 
-const About = () => {
-    return(
-        <div>
-            <h1>About Me</h1>
-            <h2>
-                I'm Christian Ivan C. Blanca just your average 20 year old joe
-                I'm currently a senior college student taking a bachelors degree 
-                in computer science at University of Cabuyao. My hobby is to play online game and biking 
-                I have a one time experience working at a freelance data entry job
-            </h2>
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
-        </div>
-    )
-}
-export default About
+const About = () => {
+  return (
+    <div className="text-center page-container">
+      <h1 className="display-4 mb-4">About Me</h1>
+      <p>I am a 3rd Year Computer Science student at Pamantasan ng Cabuyao. My hobbies include editing, photography, videography, graphic designing, and playing drums. I want to explore and learn more skills in both my hobbies and my course.</p>
+      <div className="d-flex flex-column">
+        <Link to="/" className="btn btn-outline-light btn-lg my-2 animate-button">Go to Home</Link>
+      </div>
+    </div>
+  );
+};
+
+export default About;
